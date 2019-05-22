@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">  </head>
+
+  <body>
+    <div class="container">
+      <form onsubmit="return false">
+        <div class="numbers">
+          <input type="text" id="txtResult" readonly />
+          <div>
+            <button id="btn-1" type="button" onclick="addNumber('btn-1')">
+              1
+            </button>
+            <button id="btn-2" type="button" onclick="addNumber('btn-2')">
+              2
+            </button>
+            <button id="btn-3" type="button" onclick="addNumber('btn-3')">
+              3
+            </button>
+          </div>
+          <div>
+            <button id="btn-4" type="button" onclick="addNumber('btn-4')">
+              4
+            </button>
+            <button id="btn-5" type="button" onclick="addNumber('btn-5')">
+              5
+            </button>
+            <button id="btn-6" type="button" onclick="addNumber('btn-6')">
+              6
+            </button>
+          </div>
+          <div>
+            <button id="btn-7" type="button" onclick="addNumber('btn-7')">
+              7
+            </button>
+            <button id="btn-8" type="button" onclick="addNumber('btn-8')">
+              8
+            </button>
+            <button id="btn-9" type="button" onclick="addNumber('btn-9')">
+              9
+            </button>
+          </div>
+          <div>
+            <button id="btn-0" type="button" onclick="addNumber('btn-0')">
+              0
+            </button>
+            <button id="btn-." type="button" onclick="addNumber('btn-.')">
+              .
+            </button>
+          </div>
+        </div>
+
+        <div class="operation">
+          <!-- change these buttons to submit and implement calc function in js -->
+          <button id="btn-+" type="button" onclick="store('+')">+</button>
+          <button id="btn--" type="button" onclick="store('-')">-</button>
+          <button id="btn-*" type="button" onclick="store('*')">*</button>
+          <button id="btn-/" type="button" onclick="store('/')">/</button>
+
+          <!--<button id="btn-=">=</button>-->
+          <input type="submit" id="btn-equal" value="=" onclick="calc()" />
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

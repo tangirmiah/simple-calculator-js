@@ -1,0 +1,91 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background: #6BBDD1;
+    
+    
+
+}
+
+button, #btn-equal {
+    font-family: 'Slabo 27px', serif;
+    font-size: 25px;
+    border-radius: 15%;
+    border-color: rgb(233, 121, 255);
+    background: #BCBCED;
+}
+
+button:hover, #btn-equal:hover {
+    transition: 0.5s;
+    font-family: 'Slabo 27px', serif;
+    font-size: 25px;
+    border-radius: 15%;
+    border-color: rgb(233, 121, 255);
+    background: rgb(156, 156, 233);
+}
+
+
+
+.container {
+    background: #BCBCED;
+    width: 200px;
+    height: 219px;
+    margin: 0%;
+    padding: 0%;
+    transform: translate(200px, 200px);
+    border: 3px;
+    border-color: #042962;
+    border-style: solid;
+}
+
+
+.container input {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container div button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+#btn-0 {
+    width: 104px;
+}
+
+#txtResult {
+    width: 154px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.numbers {
+    position: absolute;
+}
+
+.operation {
+    height: 219px;
+    position: absolute;
+    transform: translate(159px, 0px);
+}
+
+.container .operation button {
+    width: 42px;
+    height: 20%;
+    margin: 0%;
+    padding: 0%;
+    display: block;
+}
+
+#btn-equal {
+    width: 42px;
+    height: 20%;
+    margin: 0%;
+    padding: 0%;
+    display: block;
+}
